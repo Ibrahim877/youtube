@@ -40,7 +40,7 @@
         methods : {
             getVideo(){
                 this.link = ''
-                axios.post('http://localhost:3000/api/get_video', {url : this.url})
+                axios.post('https://nuxt-youtube.herokuapp.com/api/get_video', {url : this.url})
                     .then(res   => {
                         this.link = res.data.link
                     })
