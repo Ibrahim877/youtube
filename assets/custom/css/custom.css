@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none
+}
+html,body{
+	height: 100%;
+}
+body{
+	background: rgb(47,49,54);
+	background: linear-gradient(90deg, rgba(47,49,54,1) 0%, rgba(47,49,54,1) 0%, rgba(47,49,54,1) 100%);
+	display: flex;
+	flex-direction: column;
+	color: #CCCCCC;
+	font-family: 'Roboto';
+	font-size: 16px;
+}
+
+header {
+	background: #1F4BB6;
+	color: #DDDDDD;
+	text-align: center;
+	padding: 10px;
+}
+header a{
+	color: #FFFFFF;
+}
+footer {
+	background: green;
+	color: #DDDDDD;
+	text-align: center;
+	padding: 10px;
+}
+footer a{
+	color: #FFFFFF;
+}
+
+.content{
+	flex: 1;
+}
+
+
+.card{
+	background-color: #36393F;
+	color: #CCCCCC;
+}
+.card a{
+	color: #DDDDDD;
+}
+.card a:hover{
+	color: #FFFFFF;
+}
+.card h5{
+	color: #CCCCCC;
+}
