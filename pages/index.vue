@@ -19,7 +19,6 @@
                           <hr>
                           Video Link : {{link}}
                           <br>
-Hə gördüm gördüm <br>
                           <a class="btn btn-success" v-bind:href="link"> Yühlə qaqa </a>
                       </div>
                   </div>
