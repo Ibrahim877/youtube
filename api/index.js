@@ -47,18 +47,20 @@ app.post("/get_mp3", (req, res) => {
         link : 'Link yoxdu'
       })
     }else{
-
+       var damn = '';
       ytdl.exec(info.url, ['-x', '--audio-format', 'mp3'], {}, function(err, output) {
         if(err){
           res.status(200).json({
             error : err
           })
         }else{
-          res.status(200).json({
-            link : output.join('\n')
-          })
+          damn = output
         }
       });
+      res.status(200).json({
+        link : damn
+      })
+
     }
   });
 
