@@ -73,7 +73,7 @@
                 this.loading = true
                 this.file = false
                 this.video = {}
-                axios.post('http://nuxt-youtube.herokuapp.com/api/get_video', {videoLink : this.videoLink})
+                axios.post('https://nuxt-youtube.herokuapp.com/api/get_video', {videoLink : this.videoLink})
                     .then(res   => {
                         if(res.data.error){
                             this.error = true
