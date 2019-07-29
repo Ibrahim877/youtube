@@ -1,8 +1,8 @@
 {
-  "name": "8-nuxt-js-ile-server-side-islemlerine-giris",
+  "name": "Youtube-Search",
   "version": "1.0.0",
-  "description": "My praiseworthy Nuxt.js project",
-  "author": "Gökhan Kandemir",
+  "description": "Youtube Search project",
+  "author": "İbrahim Məmmədov",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -16,7 +16,8 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "youtube-dl": "^2.0.0"
+    "youtube-dl": "^2.0.0",
+    "ytdl": "^0.12.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
