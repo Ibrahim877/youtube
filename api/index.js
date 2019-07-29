@@ -50,9 +50,7 @@ app.post("/get_mp3", (req, res) => {
        var damn = '';
       ytdl.exec(info.url, ['-x', '--audio-format', 'mp3'], {}, function(err, output) {
         if(err){
-          res.status(200).json({
-            error : err
-          })
+
         }else{
           damn = output
         }
