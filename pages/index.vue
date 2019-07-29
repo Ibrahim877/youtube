@@ -19,7 +19,7 @@
                           <hr>
                           Video Link : {{link}}
                           <br>
-                          Nayon <br>
+                          Damn <br>
 
                           <a class="btn btn-success" v-bind:href="link"> Yühlə qaqa </a>
                       </div>
@@ -41,9 +41,9 @@
         methods : {
             getVideo(){
                 this.link = ''
-                axios.post('https://nuxt-youtube.herokuapp.com/api/get_video', {url : this.url})
+                axios.post('https://nuxt-youtube.herokuapp.com/api/get_mp3', {url : this.url})
                     .then(res   => {
-                        this.link = res.data.link
+                        console.log(res.data)
                     })
             }
         }

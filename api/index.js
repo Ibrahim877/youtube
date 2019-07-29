@@ -36,6 +36,36 @@ app.post("/get_video", (req, res) => {
   });
 
 })
+app.post("/get_mp3", (req, res) => {
+  var video_url;
+  var youtubedl = require('youtube-dl');
+  var ytdl = require('ytdl');
+  var url = req.body.url;
+  var options = ['--username=user', '--password=hunter2'];
+  youtubedl.getInfo(url, options, function(err, info) {
+    if (err) {
+      res.status(200).json({
+        link : 'Link yoxdu'
+      })
+    }else{
+
+      ytdl.exec(url, ['-x', '--audio-format', 'mp3'], {}, function(err, output) {
+        if(err){
+          res.status(200).json({
+            error : err
+          })
+        }else{
+          res.status(200).json({
+            link : output.join('\n')
+          })
+        }
+      });
+    }
+  });
+
+})
+
+
 
 module.exports = {
   path: "/api",
