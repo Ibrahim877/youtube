@@ -17,7 +17,7 @@
     "express": "^4.16.4",
     "filesize": "^4.1.2",
     "nuxt": "^2.0.0",
-    "youtube-dl": "^2.0.0",
+    "youtube-dl": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
