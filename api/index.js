@@ -15,6 +15,7 @@ app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Credentials', true);
 
   // Pass to next layer of middleware
+  next();
 });
 
 app.post("/get_video", (req, res) => {
