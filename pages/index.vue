@@ -43,7 +43,6 @@
                                 <b>Video id</b> : {{video.id}}<br>
                                 <b>Uzunluq</b> : {{video.duration}}<br>
                                 <b>Format</b> : {{video.type}}<br>
-                                <b>Ölçü</b> : {{video.size}}<br>
                                 <a v-bind:href="video.url" class="btn btn-primary">Mp4 yüklə</a>
                             </li>
                         </ul>
@@ -73,7 +72,7 @@
                 this.loading = true
                 this.file = false
                 this.video = {}
-                axios.post('https://nuxt-youtube.herokuapp.com/api/get_video', {videoLink : this.videoLink})
+                axios.post('api/get_video', {videoLink : this.videoLink})
                     .then(res   => {
                         if(res.data.error){
                             this.error = true

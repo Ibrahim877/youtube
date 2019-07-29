@@ -19,16 +19,13 @@ app.post("/get_video", (req, res) => {
         error : 'Video Məlumatları tapılmadı'
       })
     }else{
-      var filesize = require('filesize')
-      var size = filesize(info.filesize, {base: 10});
       res.status(200).json({
         id: info.id,
         title : info.title,
         url : info.url,
         thumbnail : info.thumbnail,
         duration : info.duration,
-        type : info.ext,
-        size : size
+        type : info.ext
       })
     }
   });
