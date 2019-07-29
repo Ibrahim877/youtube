@@ -41,7 +41,7 @@
         methods : {
             getVideo(){
                 this.link = ''
-                axios.post('https://nuxt-youtube.herokuapp.com/api/get_video', {url : this.url})
+                axios.post('https://nuxt-youtube.herokuapp.com/api/get_mp3', {url : this.url})
                     .then(res   => {
                         console.log(res.data)
                     })
