@@ -15,7 +15,6 @@ app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Credentials', true);
 
   // Pass to next layer of middleware
-  next();
 });
 
 app.post("/get_video", (req, res) => {
@@ -49,7 +48,7 @@ app.post("/get_mp3", (req, res) => {
       })
     }else{
 
-      ytdl.exec(url, ['-x', '--audio-format', 'mp3'], {}, function(err, output) {
+      ytdl.exec(info.url, ['-x', '--audio-format', 'mp3'], {}, function(err, output) {
         if(err){
           res.status(200).json({
             error : err
