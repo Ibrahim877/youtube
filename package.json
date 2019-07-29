@@ -1,0 +1,25 @@
+{
+  "name": "YouTube-Search",
+  "version": "1.0.0",
+  "description": "YouTube Search",
+  "author": "İbrahim Məmmədov",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "filesize": "^4.1.2",
+    "nuxt": "^2.0.0",
+    "youtube-dl": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
