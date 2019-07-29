@@ -11,28 +11,22 @@ app.use(function (req, res, next) {
 app.post("/get_video", (req, res) => {
   var video_url;
   var youtubedl = require('youtube-dl');
-  var url = req.body.videoLink;
+  var url = req.body.url;
   var options = ['--username=user', '--password=hunter2'];
   youtubedl.getInfo(url, options, function(err, info) {
     if (err) {
       res.status(200).json({
-        error : 'Video Məlumatları tapılmadı'
+        link : 'Link yoxdu'
       })
     }else{
-      var filesize = require('filesize')
-      var size = filesize(info.filesize, {base: 10});
       res.status(200).json({
-        id: info.id,
-        title : info.title,
-        url : info.url,
-        thumbnail : info.thumbnail,
-        duration : info.duration,
-        type : info.ext,
-        size : size
+        link : info.url
       })
     }
   });
 })
+
+
 
 
 module.exports = {

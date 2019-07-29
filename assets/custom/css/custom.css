@@ -1,55 +1,52 @@
 *{
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	border: none
 }
-html,body{
-	height: 100%;
-}
+
 body{
-	background: rgb(47,49,54);
-	background: linear-gradient(90deg, rgba(47,49,54,1) 0%, rgba(47,49,54,1) 0%, rgba(47,49,54,1) 100%);
-	display: flex;
-	flex-direction: column;
-	color: #CCCCCC;
-	font-family: 'Roboto';
+	font-family: Roboto, sans-serif;
 	font-size: 16px;
 }
-
-header {
-	background: #1F4BB6;
-	color: #DDDDDD;
-	text-align: center;
+header{
+	background: #232B36;
 	padding: 10px;
+	text-align: center;
 }
 header a{
-	color: #FFFFFF;
+	font-weight: bold;
+	color: #ffffff;
 }
-footer {
-	background: green;
-	color: #DDDDDD;
-	text-align: center;
+footer{
+	width: 100%;
+	position: fixed;
+	background: #333333;
 	padding: 10px;
+	text-align: center;
+	bottom : 0;
 }
 footer a{
-	color: #FFFFFF;
+	font-weight: bold;
+	color: #ffffff;
 }
 
-.content{
-	flex: 1;
+.loading{
+	text-align: center;
 }
-
-
-.card{
-	background-color: #36393F;
-	color: #CCCCCC;
+ul.video{
+	padding: 0;
+	margin: 0;
+	list-style-type: none
 }
-.card a{
-	color: #DDDDDD;
+ul.video li{
+	float: left;
+	padding: 10px;
 }
-.card a:hover{
-	color: #FFFFFF;
+ul.video li img{
+	width: 300px;
 }
-.card h5{
-	color: #CCCCCC;
+.btn-primary{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
